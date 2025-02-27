@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#he1{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    background-color: rgb(212, 170, 220);
+}
+.im{
+    height: 25px;
+    width: 25px;
+    /* float: right; */
+    margin-right: 4px;
+}
+.nav-link:hover{
+   background-color: #d9c4da;
+}
+#he2,.navbar{
+    margin-right: 7px;
+    margin-left: 7px;
+}
+#he2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+#hee2{
+    display: flex;
+  justify-content: flex-end;
+}
+.sear{
+    height: 20px;
+    width:20px;
+    position :absolute;
+    margin-right: 10px;
+    /* justify-content: center;
+    align-items: center;
+    right:72px;
+    top: 16px; */
+}
+#parmain{
+    color: rgb(151, 49, 151);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#parmain > p{
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size:x-large;
+    text-align: center;
+    justify-content: center;
+}
+#paradd{
+    display:flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+#paradd>p{
+    margin-left: 20px;
+    font-size: x-large;
+    margin-top: 10px;
+    color: rgb(115, 54, 74);
+}
+.price{
+    text-decoration: none;
+    color: red;
+}
+.add{
+    background-color: rgb(208, 174, 208);
+    height: 155px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 30px;
+}
+
+.card {
+    width: 12rem;
+    min-height: 250px; 
+    margin-left: 33px;
+    border: none !important; /* Ensures no border by default */
+    
+}
+
+.card:hover {
+    border: 2px solid plum !important; /* Only appears on hover */
+}
+.card-body>span{
+    font-size: small;
+}
+.card-body>p{
+    font-size: small;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+.discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 25px;
+    width: 80px;
+    border-radius: 15px;
+    color: red;
+    background-color: rgb(235, 209, 209);
+}
+.locations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.locations>span{
+    font-size: xx-large;
+    color: #872D88;
+}
+.map {
+    display: flex;
+    justify-content: space-around; /*Evenly distribute the sections*/
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Wrap if screen size is small */
+  }
+  
+  .map > div {
+    width: 19%; /* Adjust width for responsiveness */
+    /* padding: 10px;
+    border: 1px solid #ccc; */
+    text-align: center;
+  }
+  
+  .map img {
+    width: 100%;
+    height: 500px;
+    max-width: 300px; /* Adjust image size */
+    margin-left: 10px;
+  }
+.state>a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.side{
+    font-size: xx-large;
+    color:#872D88;
+}
+.statename{
+    font-size: large;
+    color: #a47ca4;
+    text-decoration:underline;
+}
+footer {
+    background-color: #e8cde2;
+    /* height: 40vh;
+    width: 100%; */
+    
+}
+.footertop{
+    display: flex;
+    justify-content: space-between; /* Distribute divs equally */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px; /* Add some padding */
+}
+/* .footerleft {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+} */
+.email-container {
+    display: flex;
+    align-items: center; /* Aligns SVG and text vertically */
+    gap: 8px; /* Adds spacing between icon and text */
+}
+
+.paymentcard {
+    display: flex;
+    gap: 10px; /* Adds spacing between payment icons */
+}
+
+.paymentcard > svg, 
+.paymentcard > img {
+    height: 40px;
+    width: 40px;
+}
+
+footer > div {
+    flex: 1; /* Each div will take equal space */
+    text-align: center; /* Center align text */
+}
+.social-icon {
+    width: 42px; 
+    height: 40px;
+    background-color: #800080; /* Purple background */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: white; /* Instagram icon color */
+}
+.footerbottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+.dropdown-menu{
+    display: flex;
+    flex-direction: row;
+}
+  

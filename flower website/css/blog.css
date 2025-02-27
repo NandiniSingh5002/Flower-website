@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#he1{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    background-color: rgb(212, 170, 220);
+}
+.im{
+    height: 25px;
+    width: 25px;
+    /* float: right; */
+    margin-right: 4px;
+}
+
+#he2,.navbar{
+    margin-right: 7px;
+    margin-left: 7px;
+}
+#he2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+#hee2{
+    display: flex;
+  justify-content: flex-end;
+}
+.sear{
+    height: 20px;
+    width:20px;
+    position :absolute;
+    margin-right: 10px;
+    /* justify-content: center;
+    align-items: center;
+    right:72px;
+    top: 16px; */
+}
+#parmain{
+    color: rgb(151, 49, 151);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#parmain > p{
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size:x-large;
+    text-align: center;
+    justify-content: center;
+}
+#paradd{
+    display:flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+#paradd>p{
+    margin-left: 20px;
+    font-size: x-large;
+    margin-top: 10px;
+    color: rgb(115, 54, 74);
+}
+.image-card {
+    display: flex;
+    gap: 10px; /* Optional: adds space between cards */
+    margin: 20px;
+}
+
+.image-card .card:first-child {
+    flex: 7; /* 70% width */
+}
+
+.image-card .card:last-child {
+    flex: 3; /* 30% width */
+}
+.card-body{
+    text-align: center;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensures full width */
+}
+.list-group-item span {
+    margin-left: auto;
+}
+.list-group-item span {
+    float: right;
+}
+ 
+#cards-wrapper {
+    display: flex;
+    justify-content: space-between; /* Distributes cards evenly */
+    gap: 20px; /* Space between cards */
+    margin: 20px; /* Margin from the window */
+}
+
+.custom-card {
+    flex: 1; /* Ensures equal width */
+    max-width: 30%; /* Prevents cards from stretching too much */
+    border: 1px solid #ddd; /* Optional: adds border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0; /* Rounds top corners */
+}
+
+.custom-card-body {
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.custom-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.custom-card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    #cards-wrapper {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center them */
+    }
+    
+    .custom-card {
+        max-width: 90%; /* Make them full width */
+    }
+}
+
+
+
+footer {
+    background-color: #e8cde2;
+    /* height: 40vh;
+    width: 100%; */
+    
+}
+.footertop{
+    display: flex;
+    justify-content: space-between; /* Distribute divs equally */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px; /* Add some padding */
+}
+/* .footerleft {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+} */
+.email-container {
+    display: flex;
+    align-items: center; /* Aligns SVG and text vertically */
+    gap: 8px; /* Adds spacing between icon and text */
+}
+
+.paymentcard {
+    display: flex;
+    gap: 10px; /* Adds spacing between payment icons */
+}
+
+.paymentcard > svg, 
+.paymentcard > img {
+    height: 40px;
+    width: 40px;
+}
+
+footer > div {
+    flex: 1; /* Each div will take equal space */
+    text-align: center; /* Center align text */
+}
+.social-icon {
+    width: 42px; 
+    height: 40px;
+    background-color: #800080; /* Purple background */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: white; /* Instagram icon color */
+}
+.footerbottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+.dropdown-menu{
+    display: flex;
+    flex-direction: row;
+}
+  
