@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#he1{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    background-color: rgb(212, 170, 220);
+}
+.im{
+    height: 25px;
+    width: 25px;
+    /* float: right; */
+    margin-right: 4px;
+}
+
+#he2,.navbar{
+    margin-right: 7px;
+    margin-left: 7px;
+}
+@media (max-width: 991px) { /* Apply only when collapsed */
+    #navbarSupportedContent {
+        text-align: center;
+    }
+    .navbar-nav {
+        justify-content: center;
+        width: 100%;
+    }
+    .dropdown-menu {
+        text-align: center;
+    }
+}
+#he2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+#hee2{
+    display: flex;
+  justify-content: flex-end;
+}
+.sear{
+    height: 20px;
+    width:20px;
+    position :absolute;
+    margin-right: 10px;
+}
+
+/* Banner Section */
+.bannar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  .bannar img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Heading (H2) */
+  .bannar h2 {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    color: white;
+    font-size: 2.2vw;
+    font-weight: bold;
+    max-width: 90%;
+  }
+  
+  /* Paragraph Section */
+  #parag {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    color: white;
+    font-size: 1.5vw;
+    max-width: 60%;
+  }
+  
+  /* Category Button */
+  .bte {
+    display: flex;
+    position: absolute;
+    top: calc(36% + 5vh); /* Places it after #parag */
+    left: 5%;
+    height: 60px;
+    width: 80%;
+    max-width: 260px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    gap: 10px;
+    background-color: rgb(42, 112, 59);
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  
+  /* Medium Screens (Tablets) */
+  @media (max-width: 768px) {
+    .bannar h2 {
+      font-size: 3vw;
+      top: 6%;
+      left: 5%;
+    }
+  
+    #parag {
+      font-size: 1.3vw;
+      top: 16%;
+      left: 5%;
+      max-width: 70%;
+    }
+  
+    .bte {
+      height: 55px;
+      font-size: 1em;
+      top: calc(22% + 5vh);
+      max-width: 230px;
+      left: 5%;
+    }
+  }
+  
+  /* Small Screens (Phones) */
+  @media (max-width: 480px) {
+    .bannar h2 {
+      font-size: 4vw;
+      top: 5%;
+      left: 5%;
+    }
+  
+    #parag {
+      font-size: 1.1em;
+      top: 14%;
+      left: 5%;
+      max-width: 80%;
+    }
+  
+    .bte {
+      height: 40px;
+      font-size: 0.9em;
+      top: calc(60% + 5vh);
+      max-width: 200px;
+      gap: 5px;
+      padding: 8px;
+      left: 5%;
+    }
+  }
+  
+  /* Extra Small Screens (Less than 350px) */
+  @media (max-width: 350px) {
+    .bannar h2 {
+      font-size: 3vw;
+      top: 2%;
+      left: 5%;
+    }
+  
+    #parag {
+      font-size: 0.75em;
+      top: 12%;
+      left: 5%;
+      max-width: 60%;
+    }
+  
+    .bte {
+      height: 25px;
+      font-size: 0.60em;
+      top: calc(70% + 5vh);
+      max-width: 120px;
+      gap: 3px;
+      left: 5%;
+    }
+  }
+  
+  /* Hover effect */
+  .bte:hover {
+    background-color: rgb(34, 90, 47);
+    transform: scale(1.05);
+  }
+  
+   
+  
+/* Centered Text Section */
+.textpara {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  padding: 20px;
+}
+
+/* Title Styling */
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Description Styling */
+.description {
+  font-size: 22px;
+  max-width: 650px;
+  line-height: 1.5;
+  padding: 0 20px; /* Adds spacing for smaller screens */
+}
+
+/* Responsive Design */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .title {
+      font-size: 32px;
+  }
+
+  .description {
+      font-size: 20px;
+      max-width: 90%;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .textpara {
+      height: auto;
+      padding: 30px 15px;
+  }
+
+  .title {
+      font-size: 28px;
+  }
+
+  .description {
+      font-size: 18px;
+      max-width: 100%;
+  }
+}
+
+/* services */
+/* #servicess{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+} */
+ /* Services Container */
+#servicess {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Individual Service Item */
+.service-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  #servicess {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #servicess {
+      grid-template-columns: 1fr;
+  }
+
+  .service-item {
+      padding: 20px;
+  }
+}
+
+.p_ser{
+  margin:10px;
+}
+.gallary {
+    text-align: center; /* Centers the title */
+}
+
+.gallary p {
+    font-size: 24px; /* Larger font size */
+    font-weight: bold;
+}
+
+#photocoll {
+    display: flex;
+    justify-content: space-between; /* Distributes images evenly */
+    align-items: center;
+    max-width: 90%; /* Adjust width as needed */
+    margin: 0 auto; /* Centers the entire row */
+}
+
+#photocoll .col-md-3 {
+    padding: 0 15px; /* Ensures equal spacing on both sides */
+}
+
+#photocoll img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover; /* Ensures images don’t stretch */
+    /* border-radius: 10px; Optional: Adds rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow effect */
+}
+
+/* Contact Us Section */
+.contact_us {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background Image */
+.contact_us img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Content Box */
+.con_para {
+  position: relative;
+  max-width: 50%;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.con_para p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.con_para ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.con_para ul li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Contact Button */
+.contact_button {
+  background-color: rgb(177, 78, 177);
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: underline;
+}
+
+/* Hover Effect */
+.contact_button:hover {
+  background-color: darkviolet;
+}
+
+/* Responsive Design */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .con_para {
+      max-width: 70%;
+      text-align: center;
+  }
+
+  .main-heading {
+      font-size: 28px;
+  }
+
+  .con_para ul {
+      text-align: center;
+      padding: 0;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .contact_us {
+      height: auto;
+      flex-direction: column;
+      padding: 50px 20px;
+  }
+
+  .contact_us img {
+      height: 50vh; /* Adjust image height for mobile */
+  }
+
+  .con_para {
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .main-heading {
+      font-size: 24px;
+  }
+
+  .con_para p, .con_para ul li {
+      font-size: 16px;
+  }
+
+  .contact_button {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+}
+
+
+ /* client */
+ .client{
+    margin: 20px 0 20px 0;
+    text-align: center; /* Centers the heading */
+}
+#photoclient img {
+    width: 150px; /* Adjust size as needed */
+    height: 100px;
+}
+.client p {
+    font-size: 24px; /* Larger font size for heading */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below heading */
+}
+/* two portion image */
+/* .twopart{
+    display: flex;
+    flex-direction: row;
+} */
+  
+/* Main container */
+.twopart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Image Section */
+.img_div {
+  position: relative;
+  max-width: 600px;
+  flex: 1;
+  text-align: center;
+}
+
+.img_div img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Overlay text on image */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 33px;
+  font-weight: bold;
+  color: white;
+  /* background: rgba(0, 0, 0, 0.5); */
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Blog Section */
+.blog-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.blog-title {
+  font-size: x-large;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Gift Basket Items */
+.giftbaskets {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.giftbaskets img {
+  width: 130px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.read {
+  color: blue;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .twopart {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .img_div {
+      max-width: 100%;
+  }
+
+  .blog-container {
+      text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .giftbaskets {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .giftbaskets img {
+      width: 100px;
+  }
+
+  .blog-title {
+      margin-left: 0;
+      text-align: center;
+  }
+
+  .overlay-text {
+      font-size: 18px;
+      padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text {
+      font-size: 16px;
+  }
+
+  .giftbaskets img {
+      width: 80px;
+  }
+}
+
+
+
+
+.giftbaskets{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 20px;
+    
+}
+.read{
+  color: #e8cde2;
+  text-decoration: underline;
+}
+.giftbaskets p{
+    margin: 10px 0 0 10px;
+}
+footer {
+    background-color: #e8cde2;
+    /* height: 40vh;
+    width: 100%; */
+    
+}
+.footertop{
+    display: flex;
+    justify-content: space-between; /* Distribute divs equally */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px; /* Add some padding */
+}
+
+.email-container {
+    display: flex;
+    align-items: center; /* Aligns SVG and text vertically */
+    gap: 8px; /* Adds spacing between icon and text */
+}
+
+.paymentcard {
+    display: flex;
+    gap: 10px; /* Adds spacing between payment icons */
+}
+
+.paymentcard > svg, 
+.paymentcard > img {
+    height: 40px;
+    width: 40px;
+}
+
+footer > div {
+    flex: 1; /* Each div will take equal space */
+    text-align: center; /* Center align text */
+}
+.social-icon {
+    width: 42px; 
+    height: 40px;
+    background-color: #800080; /* Purple background */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: white; /* Instagram icon color */
+}
+.footerbottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+.dropdown-menu{
+    display: flex;
+    flex-direction: row;
+}
+#phone{
+    margin-right: 10px; 
+    filter: invert(55%) sepia(12%) saturate(360%) hue-rotate(270deg) brightness(90%);
+    height:20px;
+    width:20px;
+}
+@media screen and (max-width: 768px) {
+    .footertop {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .footerleft img {
+      height: 60px;
+      width: 60px;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .footertop p, .footertop span {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .email-container, .paymentcard {
+      /* flex-direction: column; */
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .footerbottom {
+      /* flex-direction: column; */
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .social-icon {
+      width: 30px;
+      height: 30px;
+      display: block;
+      margin: 5px auto;
+    }
+  }
+  
